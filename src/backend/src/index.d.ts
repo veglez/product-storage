@@ -1,0 +1,3 @@
+interface ApolloContext {
+  req: Request;
+}
