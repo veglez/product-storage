@@ -1,0 +1,33 @@
+{
+  "name": "product-storage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Valentin Eduardo Gonzalez Morales <valentin.eduardo.g94@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "src/backend",
+    "src/frontend"
+  ],
+  "scripts": {
+    "start-frontend": "node src/frontend/dist/index.js",
+    "start-backend": "node src/backend/dist/index.js",
+    "start-all": "node src/backend/dist/index.js && node src/frontend/dist/index.js",
+    "dev": "yarn run dev -w=backend",
+    "build": "yarn run build -w=src/backend && yarn run build -w=src/frontend",
+    "lint": "eslint ./src/**/*.{js,jsx,ts,tsx}",
+    "format": "prettier --write './src/**/*.{js,jsx,ts,tsx}' --config .prettierrc.json"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "l": "^0.6.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.3"
+  }
+}
