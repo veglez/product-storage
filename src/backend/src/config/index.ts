@@ -2,6 +2,8 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+console.log("process: ", process.env.PORT)
+
 const CONFIG = {
   PORT: process.env.PORT || 8000,
   HOSTNAME: process.env.HOSTNAME || "localhost",

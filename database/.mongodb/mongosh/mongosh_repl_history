@@ -1,3 +1,62 @@
+use store
+c.deleteMany({name: "laptop"})
+c.count()
+const c = db.categoryschemas
+use store
+c.deleteMany({name: "laptop"})
+c.count()
+const c = db.categoryschemas
+const c = categoryschemas
+use store
+use stor
+c.deleteMany({name: "laptop"})
+c.count()
+c.find()
+const c = db.categoryschemas
+use store
+c.deleteMany({name: "laptop"})
+c.count()
+const c = db.categoryschemas
+use store
+c.deleteMany({name: "laptop"})
+c.count()
+const c = db.categoryschemas
+use store
+c.count()
+c.find({}, {name: 1})
+c.find()
+const c = db.categoryschemas
+const c = categoryschemas
+use store
+c.find({}, {name: 1})
+c.count()
+c.find()
+const c = db.categoryschemas
+use store
+c.count()
+c.find()
+c.deleteMany({name: "Laptop"})
+c.count()
+c.find()
+const c = db.categoryschemas
+use store
+c.count()
+c.deleteMany({name: "Laptop"})
+c.find()
+c.find({}, {autopopulate: true})
+c.find({}, {$autopopulate: true})
+c.find()
+const c = db.categoryschemas
+use store
+p.deleteMany({ "name": "Laptop"})
+p.countDocuments()
+p.deleteMany({ "name": "laptop"})
+p.find()
+p.findMany({ name: "laptop"})
+p.find({ name: "laptop"})
+p.deleteMany({ name: "laptop"})
+const p = db.categoryschemas
+use store
 exit
 db.categoryschemas.find()
 use store

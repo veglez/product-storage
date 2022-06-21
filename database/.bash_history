@@ -1,2 +1,3 @@
 mongosh
 exit
+exit

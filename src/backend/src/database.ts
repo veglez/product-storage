@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import CONFIG from "./config";
 
 const { mongoURL } = CONFIG;
-
+console.log(`The mongo db connection is ${mongoURL}`)
 mongoose
   .connect(mongoURL)
   .then((db) => {
