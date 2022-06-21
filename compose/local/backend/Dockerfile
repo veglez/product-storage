@@ -4,7 +4,7 @@ WORKDIR /myapp
 
 COPY ["package.json", "yarn.lock", "/myapp/"]
 
-RUN yarn install && yarn add -D typescript
+RUN yarn install &&  yarn add -D typescript
 
 COPY [".", "/myapp"]
 

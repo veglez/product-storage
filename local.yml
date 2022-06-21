@@ -7,13 +7,22 @@ services:
       context: ./src/backend
       dockerfile: ../../compose/local/backend/Dockerfile
     restart: always
+    depends_on:
+      - mongodb
     env_file:
       - .env
     ports:
       - '8000:8000'
     volumes:
-      - js_dependencies:/myapp/node_modules
+      - js_dependencies:/myapp/node_modules/
       - ./src/backend:/myapp/
+  mongodb:
+    container_name: app_db
+    image: mongo
+    volumes:
+      - ./database/:/data/db/
+    logging:
+      driver: none
 
 volumes:
   js_dependencies:

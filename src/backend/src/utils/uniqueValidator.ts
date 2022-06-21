@@ -12,6 +12,8 @@ export default async function uniqueValidator(
     if (!doc) return true;
     return false;
   } catch (error) {
+    console.log("Validator Errors");
+    console.log(error);
     return false;
   }
 }

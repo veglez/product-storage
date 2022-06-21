@@ -4,6 +4,7 @@ import cors from "cors";
 // utils
 import CONFIG from "./config";
 import DefineRoutes from "./routes";
+import "./database";
 
 const main = async () => {
   const app = express();

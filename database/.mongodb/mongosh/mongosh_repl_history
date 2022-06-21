@@ -1,0 +1,6 @@
+exit
+db.categoryschemas.find()
+use store
+db.categoryschemas.find()
+db.getCollectionNames()
+use store
