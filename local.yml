@@ -10,9 +10,10 @@ services:
     env_file:
       - .env
     ports:
-      - "8000:8000"
+      - '8000:8000'
     volumes:
       - js_dependencies:/myapp/node_modules
+      - ./src/backend:/myapp/
 
 volumes:
   js_dependencies:
